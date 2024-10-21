@@ -1,0 +1,234 @@
+/* Container styling */
+.container1{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.task-form {
+  display: flex;
+  gap: 20px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.form-section {
+  flex: 1;
+}
+
+/* Circular Menu Container */
+.circular-menu-container {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Each item in the circular menu */
+.circular-menu-item {
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Circular menu item image */
+.circular-menu-item img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #0f2557;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+
+/* Keep the image inside its container and responsive on selection */
+.circular-menu-item.selected-resource img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ff9800; /* Ensure image border matches the outer border */
+}
+
+.resource-label {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  color: #333;
+}
+
+.selected-resources-list ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.team-members-container {
+  max-width: 300px;
+  margin-right: 20px;
+}
+
+.team-members-container h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Additional styling for the form and components */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.text-danger {
+  color: red;
+}
+
+/* Modern checkbox styling */
+.checkbox-group .MuiFormControlLabel-root {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.2);
+  accent-color: #051094;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid #051094;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.2s;
+}
+
+.checkbox-group input[type="checkbox"]:checked {
+  background: #051094;
+  border-color: #051094;
+  box-shadow: 0 0 5px rgba(66, 165, 245, 0.5);
+}
+
+.checkbox-group input[type="checkbox"]:checked::before {
+  content: '✔';
+  font-size: 16px;
+  color: white;
+  position: absolute;
+  left: 3px;
+  top: 0;
+  transform: scale(1.2);
+}
+
+.checkbox-group input[type="checkbox"]:hover {
+  box-shadow: 0 0 8px rgba(66, 165, 245, 0.3);
+}
+
+/* Resource image styling */
+.selected-resources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.resource-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #075e86;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.resource-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Success and error messages */
+.text-success {
+  color: #2e7d32;
+  text-align: center;
+  margin-bottom: 16px;
+  background: rgba(46, 125, 50, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.text-danger {
+  color: #c62828;
+  text-align: center;
+  margin-bottom: 16px;
+  background: rgba(198, 40, 40, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Button styles */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button-group .MuiButton-root {
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button-group .MuiButton-contained {
+  background-color: #42a5f5;
+  color: #ffffff;
+  box-shadow: 0 3px 6px rgba(66, 165, 245, 0.3);
+}
+
+.button-group .MuiButton-contained:hover {
+  background-color: #1e88e5;
+  transform: scale(1.05);
+}
+
+.button-group .MuiButton-outlined {
+  border-color: #42a5f5;
+  color: #42a5f5;
+}
+
+.button-group .MuiButton-outlined:hover {
+  background-color: rgba(66, 165, 245, 0.1);
+  border-color: #1e88e5;
+  color: #1e88e5;
+  transform: scale(1.05);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .task-form {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  .task-form {
+    flex-direction: column;
+  }
+
+  .form-section {
+    width: 100%;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-group .MuiButton-root {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,281 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Card Styling */
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+  border: 2px solid  #0f2557; /* Custom card outline color */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Status Badge Styling */
+.card .status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.status-badge.planned {
+  background-color: #ffcc00; /* Yellow */
+}
+
+.status-badge.inprogress {
+  background-color: #ff9800; /* Orange */
+}
+
+.status-badge.inspection {
+  background-color: #28a745; /* Green */
+}
+
+.status-badge.completed {
+  background-color: #6c757d; /* Grey */
+}
+
+/* Dialog Box Styling */
+.dialog-container .MuiDialog-paper {
+  border-radius: 12px; /* Rounded corners for the dialog */
+  padding: 20px; /* Padding inside the dialog */
+  background-color: #a8a8f7; /* Background color for dialog */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow effect */
+}
+
+.dialog-container .MuiDialogTitle-root {
+  font-size: 1.5rem; /* Font size for the title */
+  font-weight: bold; /* Bold title */
+  color: #051094; /* Custom blue shade for the title */
+}
+
+.dialog-container .MuiDialogContent-root {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Space between input fields */
+}
+
+.dialog-container .MuiTextField-root {
+  background-color: #a8a8f7; /* Background color for text fields */
+  border-radius: 8px; /* Rounded corners for text fields */
+  padding: 0 10px; /* Padding inside the text fields */
+}
+
+.dialog-container .MuiDialogActions-root {
+  justify-content: flex-end; /* Align action buttons to the right */
+  padding: 12px 24px; /* Padding for the actions container */
+  background-color: #f4f4f9; /* Match background color with the dialog */
+  border-top: 1px solid #e0e0e0; /* Optional: border line to separate content and actions */
+}
+
+.dialog-container .MuiButton-root {
+  border-radius: 8px; /* Rounded buttons */
+  padding: 10px 20px; /* Padding for buttons */
+}
+
+.dialog-container .MuiButton-containedPrimary {
+  background-color: #1976d2; /* Custom blue for 'Update' button */
+  color: white;
+}
+
+.dialog-container .MuiButton-containedSecondary {
+  background-color: #f44336; /* Red color for 'Cancel' button */
+  color: white;
+}
+
+/* Text Fields and Dropdowns (Calendar and Dropdown Options) */
+.MuiOutlinedInput-root {
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #1919d2; /* Blue when focused */
+}
+
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #3c1bbe; /* Blue on hover */
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: #0f2557; /* Default border color */
+}
+
+/* Calendar (Date Picker) Styling */
+.MuiTextField-root input[type="date"] {
+  background-color: #f7f9fa; /* Light blue background */
+  border-radius: 8px;
+  border: 1px solid #0f2557;
+  padding: 10px;
+  color: #051094;
+}
+
+.MuiTextField-root input[type="date"]:focus {
+  border-color: #1976d2; /* Blue on focus */
+}
+
+.MuiTextField-root input[type="date"]:hover {
+  border-color: #0f2557; /* Hover border */
+}
+
+/* Dropdown Menu Items */
+.MuiMenuItem-root {
+  color: #051094; /* Custom blue shade for text */
+  background-color: #b1c219; /* Light yellow background */
+}
+
+.MuiMenuItem-root:hover {
+  background-color: #ffeb3b; /* Bright yellow on hover */
+  color: #fff;
+}
+
+.MuiMenuItem-root.selected {
+  background-color: #77c4be; /* Light green when selected */
+  color: #fff;
+}
+
+/* Dropdown Select Box */
+.MuiSelect-root {
+  background-color: #2a97a5; /* Light blue background */
+  border-radius: 8px;
+}
+
+.MuiSelect-root:focus {
+  border-color: #28a745; /* Green border when focused */
+}
+
+
+/* Project Name Styling */
+.project-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 10px;
+}
+
+/* Project Details Styling */
+.card-text {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.card-text strong {
+  color: #333;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.btn-inspection {
+  background-color: #7ddfe6;
+  color: white;
+  border: none;
+  margin-bottom: 15px;
+}
+
+.btn-edit {
+  background-color: #075e86; /* Custom blue shade for edit button */
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #0056b3;
+}
+
+.btn-danger {
+  background-color: #f44336; /* Default MUI red for delete button */
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.btn-add {
+  background-color: #1976d2; /* Default MUI blue for add button */
+  color: white;
+}
+
+.btn-add:hover {
+  background-color: #1565c0;
+}
+
+/* Create Project Card */
+.create-project-card {
+  background-color: #4CAF50; /* Green color */
+  color: white;
+}
+
+.create-project-btn {
+  background-color: #4CAF50; /* Green button */
+  color: white;
+  border: none;
+}
+
+.create-project-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Project Heading Styling */
+.project-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+  border-left: 5px solid;
+  margin-bottom: 20px;
+  color: #051094; /* Custom blue shade for headings and input field names */
+}
+
+.project-heading.planned {
+  color: #ffcc00;
+  border-left-color: #ffcc00;
+  background-color: rgba(255, 204, 0, 0.1);
+}
+
+.project-heading.inProgress {
+  color: #ff9800;
+  border-left-color: #ff9800;
+  background-color: rgba(255, 152, 0, 0.1);
+}
+
+.project-heading.inspection {
+  color: #28a745;
+  border-left-color: #28a745;
+  background-color: rgba(40, 167, 69, 0.1);
+}
+
+.project-heading.completed {
+  color: #6c757d;
+  border-left-color: #6c757d;
+  background-color: rgba(108, 117, 125, 0.1);
+}

@@ -1,0 +1,237 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0; 
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center; 
+    padding-top: 20px; 
+}
+
+.styled-select {
+    appearance: none; /* Remove default styling */
+    border: 2px solid #4f5be1; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 12px; /* Padding inside */
+    background-color: white; /* White background */
+    font-size: 16px; /* Font size for better readability */
+    color: #075e86; /* Text color */
+    transition: border-color 0.3s ease;
+}
+
+.styled-select:focus {
+    border-color: #59B4C3; /* Focus border color */
+    outline: none; /* Remove default focus outline */
+}
+
+/* Adding a down-arrow icon to the dropdown */
+.styled-select {
+    background: white url('data:image/svg+xml;base64,...') no-repeat right 12px center;
+    background-size: 16px;
+}
+
+form {
+    background-color: #f0f8ff;
+    padding: 15px; 
+    border-radius: 8px;
+    width: 100%;
+}
+
+/* Card Container (Form) */
+.card {
+    width: 90%; /* Reduce form width */
+    max-width: 600px; /* Further reduce max width for better usability */
+    padding: 20px; /* Add some padding */
+    border-radius: 10px; /* Rounded corners for the card */
+    margin: 20px auto; /* Center the card */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for readability */
+    transition: all 0.3s ease; /* Smooth transition effect */
+    border: 2px solid #59B4C3; /* Updated border color to #59B4C3 */
+}
+
+.card h3 {
+    color: #075e86; /* Keep or change color as needed */
+    font-family: 'Montserrat', sans-serif; /* Change to a more modern and stylish font */
+    font-weight: bold; /* Keep the bold styling */
+    letter-spacing: 1.5px; /* Keep letter spacing for a sleek look */
+    margin-bottom: 20px; /* Keep spacing below headings */
+    text-align: center; /* Center align header text */
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px; /* Adjust margin for spacing */
+}
+
+/* Labels */
+label {
+    font-weight: 600; /* Slightly bolder text for labels */
+    color: #075e86; /* Darker color for labels */
+}
+
+/* Input Fields */
+.form-control {
+    border: 2px solid #A3C1DA; /* Light blue border color */
+    border-radius: 8px; /* More rounded corners for input fields */
+    padding: 12px; /* Increased padding for comfort */
+    transition: border-color 0.3s ease; /* Smooth border transition */
+    background-color: #fff; /* White background for input fields */
+    width: 100%; /* Ensure inputs take full width */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+/* Form Control Focus State */
+.form-control:focus {
+    border-color: #7BAFDE; /* Darker shade on focus */
+    outline: none; /* Remove outline */
+}
+
+/* Input Date Field */
+input[type="date"] {
+    border: 2px solid #A3C1DA; /* Light blue border color */
+    border-radius: 8px; /* Rounded corners for input fields */
+    padding: 12px; /* Increased padding for comfort */
+    background-color: #fff; /* White background for input fields */
+    color: #495057; /* Darker color for text */
+    font-size: 16px; /* Adjust font size for better readability */
+    width: 100%; /* Ensure date input takes full width */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+/* Date Input Focus State */
+input[type="date"]:focus {
+    border-color: #7BAFDE; /* Darker shade on focus */
+    outline: none; /* Remove outline */
+}
+
+/* Change the calendar icon color (for webkit browsers) */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: #18db94; /* Change the background color of the calendar icon */
+    border-radius: 5px; /* Rounded corners for the icon */
+}
+
+/* Change the calendar icon color for Firefox */
+input[type="date"]::-moz-calendar-picker-indicator {
+    background-color: #2d86e5; /* Change the background color of the calendar icon */
+    border-radius: 5px; /* Rounded corners for the icon */
+}
+
+/* Range Input */
+input[type="range"] {
+    -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+    width: 100%; /* Full width for the range input */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+/* Track */
+input[type="range"]::-webkit-slider-runnable-track {
+    background: #ffcc00; /* Yellow track color */
+    height: 8px; /* Height of the track */
+    border-radius: 5px; /* Rounded corners for the track */
+}
+
+input[type="range"]::-moz-range-track {
+    background: #ffcc00; /* Yellow track color for Firefox */
+    height: 8px; /* Height of the track */
+    border-radius: 5px; /* Rounded corners for the track */
+}
+
+/* Thumb */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+    background: #59B4C3; /* Blue thumb color */
+    border: 2px solid #59B4C3; /* Border color for the thumb */
+    height: 20px; /* Height of the thumb */
+    width: 20px; /* Width of the thumb */
+    border-radius: 50%; /* Round shape for the thumb */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: -6px; /* Center the thumb on the track */
+}
+
+input[type="range"]::-moz-range-thumb {
+    background: #59B4C3; /* Blue thumb color for Firefox */
+    border: 2px solid #59B4C3; /* Border color for the thumb */
+    height: 20px; /* Height of the thumb */
+    width: 20px; /* Width of the thumb */
+    border-radius: 50%; /* Round shape for the thumb */
+}
+
+/* Active State */
+input[type="range"]:active::-webkit-slider-thumb {
+    background: #0056b3; /* Darker color for the thumb when active */
+}
+
+input[type="range"]:active::-moz-range-thumb {
+    background: #0056b3; /* Darker color for the thumb when active */
+}
+
+/* Radio Buttons */
+.form-check {
+    margin-bottom: 0.5rem; /* Spacing between radio options */
+}
+
+/* Buttons */
+.btn {
+    border-radius: 8px; /* Rounded corners for buttons */
+    padding: 12px 20px; /* Increased padding for buttons */
+    font-weight: 600; /* Slightly bolder text for buttons */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.btn-primary {
+    background-color: #056473; /* Primary button color */
+    border: none; /* No border */
+    color: white; /* White text color */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Secondary button color */
+    color: white; /* White text color */
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Success/Error Messages */
+.text-success {
+    color: #28a745; /* Green color for success messages */
+    text-align: center; /* Center align messages */
+}
+
+.text-danger {
+    color: #dc3545; /* Red color for error messages */
+    text-align: center; /* Center align messages */
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .card {
+        width: 95%; /* Reduce form width on small screens */
+        max-width: 400px; /* Further reduce max width */
+    }
+    
+    .form-control {
+        font-size: 16px; /* Adjust font size on smaller screens */
+    }
+    
+    .btn {
+        width: auto; /* Change buttons to auto width on small screens */
+    }
+}

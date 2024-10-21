@@ -1,0 +1,4 @@
+#parentM .nav-item .nav-link:hover {
+  background: linear-gradient(180deg, #EFF396, #59B4C3);
+  color: #000 !important; 
+} 

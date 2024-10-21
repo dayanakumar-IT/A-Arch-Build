@@ -1,0 +1,79 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem;
+    padding: 2rem;
+  }
+  
+  .compartment {
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #a0bfee;  /* Same color for all compartments */
+  }
+  
+  /* Compartment 1 */
+  .compartment-1 {
+    background-color: #a0bfee;
+    color: #051094; /* Change to the same color */
+  }
+  
+  /* Compartment 2 */
+  .compartment-2 {
+    background-color: #a0bfee;
+    color: #051094; /* Change to the same color */
+  }
+  
+  /* Compartment for Calendar and Clock */
+  .calendar-clock-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem; /* Small gap between the calendar and clock compartments */
+    width: 100%;
+    color: #051094;
+    
+  }
+  
+  /* Compartment for Calendar */
+  .compartment-calendar,
+  .compartment-clock {
+    flex: 1; /* Make them take equal space */
+    
+  }
+  
+  /* Compartment 4 */
+  .compartment-4 {
+    background-color: #a0bfee; /* Change to the same color */
+    color: #051094;
+
+  }
+  
+  .slider-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .submit-button {
+    align-self: flex-end;
+    background-color: #1520A6 !important;
+  }
+
+  .selected-time-box {
+    margin-top: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  .css-gqp4xl-MuiPickersLayout-root .MuiPickersLayout-actionBar{
+    display: none;
+  }
+
+  .css-12p2adl-MuiDayCalendar-monthContainer{
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+  
+  

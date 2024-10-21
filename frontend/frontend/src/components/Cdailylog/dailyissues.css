@@ -1,0 +1,381 @@
+.custom-heading {
+    background: linear-gradient(350deg, #211C6A, #4137D0);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center; 
+    border-radius: 5px;
+    margin: 0; 
+    width: 100vw; 
+    position: relative;
+    left: calc(-50vw + 50%); 
+    font-family: Helvetica;
+}
+.container {
+    font-family: 'Georgia', serif;
+   
+}
+.form-group1 {
+    background-color: #d3d3d3; 
+    border-radius: 8px; 
+    padding: 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.form-control {
+    font-size: 16px; 
+    padding: 10px;
+    border-radius: 4px; 
+    border: 1px solid #ccc; 
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); 
+    transition: border-color 0.3s, box-shadow 0.3s; 
+}
+
+
+.form-control:focus {
+    border-color: #007bff; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+    outline: none; 
+}
+
+
+
+.priority-group {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+
+.priority-option {
+    display: flex;
+    align-items: center;
+}
+
+
+.priority-input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    margin-right: 8px; 
+}
+
+.priority-input[value="High"]:checked {
+    border-color: red;
+    background-color: red;
+}
+
+.priority-input[value="Medium"]:checked {
+    border-color: orange;
+    background-color: orange;
+}
+
+.priority-input[value="Low"]:checked {
+    border-color: green;
+    background-color: green;
+}
+
+
+.priority-input:checked::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: white; 
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.priority-label {
+    margin-left: 4px; 
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.375rem 0.75rem; 
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+
+textarea.form-control {
+    height: 120px; 
+    resize: vertical; 
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+
+
+.btn-submit {
+    background: linear-gradient(180deg, #EFF396, #59B4C3);
+    border: none;
+    color: #211C6A;
+    width: 100px; 
+    height: 40px;
+}
+
+
+.btn-back {
+    background-color: gray;
+    border: none;
+    color: white;
+    width: 130px; 
+    height: 40px; 
+}
+
+.btn-submit:hover,
+.btn-back:hover {
+    opacity: 0.9; 
+}
+
+
+.btn-submit:active,
+.btn-back:active {
+    opacity: 0.6;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    margin: 20px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    appearance: none; 
+    width: 20px; 
+    height: 20px; 
+    border: 2px solid #ccc; 
+    border-radius: 3px; 
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s; 
+}
+
+.checkbox-container input[type="checkbox"]:checked {
+    background: linear-gradient(350deg, #211C6A, #4137D0);
+}
+
+.checkbox-container input[type="checkbox"]:checked::after {
+    content: "✓"; 
+    color:white;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.checkbox-container label {
+    margin-left: 10px; 
+    font-weight: normal; 
+    transition: font-weight 0.3s;
+}
+
+.checkbox-container input[type="checkbox"]:checked + label {
+    font-weight: bold; 
+}
+
+.custom-icon-width {
+    width: 60px; 
+    height: 100%;
+    text-align: center; 
+    display: flex; 
+    align-items: center; 
+}
+.custom-list-group-item {
+    background-color: #211C6A;
+    color: #ffffff; 
+}
+.unresolved {
+    background: linear-gradient(350deg, #211C6A, #4137D0);
+    color: #ffffff;
+}
+
+.resolved{
+    background: linear-gradient(350deg,#00A86B, #74E291);
+   
+    color: #211C6A;
+}
+.unresolved, .resolved {
+    border-radius: 8px; 
+    padding: 15px;
+    margin-bottom: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.unresolved {
+    border: 1px solid #e0e0e0; 
+}
+
+.resolved {
+    border: 1px solid #d0f0d0; 
+}
+
+.list-group div {
+    margin-bottom: 10px;
+}
+.btn-gray {
+    background-color:#787878; 
+    border-color: #A0A0A0; 
+    color: #fff; 
+}
+
+.btn-gray:hover {
+    background-color: #8c8c8c;
+    border-color: #8c8c8c; 
+}
+.button-group {
+    display: flex; 
+    gap: 10px; 
+    justify-content: flex-end;
+}
+
+.add {
+    text-align: right; 
+}
+
+.addbutton {
+    background: linear-gradient(180deg, #EFF396, #59B4C3);
+    color:#211C6A; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+}
+
+.addbutton:hover {
+    background-color: #1A165B; 
+}
+.mycontainer1 {
+    width: 90%; 
+    max-width: 1000px; 
+    padding: 20px;
+    background: #051094;
+    border-radius: 8px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: auto; 
+    
+   
+    position: absolute;
+    top: 60%; /* Increase top to add margin-like space */
+    left: 58%; /* Increase left to add margin-like space */
+    transform: translate(-50%, -50%);
+}
+
+.card1 {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.card-title1 {
+    font-size: 36px;
+    color: #FFFFFF; 
+    margin: 0 0 20px 0; 
+    text-align: center; 
+    display: flex;
+    justify-content: center; 
+}
+
+.card-body1 {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #EFF396, #A0D683);
+    
+
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-left: 40px;
+}
+
+.card-row p {
+    margin: 0;
+    font-size: 16px;
+    color: #211C6A; 
+    flex: 1;
+}
+
+.card-row p strong {
+    color: #211C6A; 
+}
+
+.card-description {
+    margin-bottom: 15px;
+    margin-left: 40px;
+}
+
+.card-priority {
+    margin-bottom: 15px;
+    margin-left: 40px;
+}
+
+
+
+.card-team p {
+    margin: 8px 0;
+    line-height: 1.5; 
+}
+
+
+.card-team strong {
+    font-weight: bold;
+}
+.card-nofi {
+    margin-left: auto;
+  
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-gen{
+    background-color: #211C6A; 
+    color: #fff;
+}
+.btn-gen:hover {
+    background-color:#211C6A; 
+    color: #fff; 
+}
+
+.btn-secondary {
+    background-color: #6c757d; 
+    color: #fff;
+}
