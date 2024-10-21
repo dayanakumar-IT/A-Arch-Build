@@ -1,6 +1,9 @@
-![image](https://github.com/user-attachments/assets/951dd160-6d1d-49a9-ad07-1b6ccc626c52)# 🏗️ A-Arch Build
+🏗️ A-Arch Build
+![Project Dashboard](assets/Client_Side_Page.png) ![Project Dashboard](assets/Admin_Side_Page.png)
 
 A-Arch Build is a comprehensive web application built using the MERN stack by a group of 7 members, including me, for our second-year project. It offers a range of features designed to streamline and manage various aspects of construction projects.
+
+
 
 ## 🚀 Features
 
@@ -24,11 +27,12 @@ Schedule and record construction inspections seamlessly.
 
 ### 🗓️ Appointment Booking
 Allow clients and team members to book appointments, ensuring streamlined project planning.
+![Project Dashboard](assets/appointment.png)
 
 
 ### 🛠️ Procurement & Proposal Creation
 Simplify procurement processes and proposal creation to manage vendor relationships and project resources.
-![Project Dashboard](assets/project.png)
+![Project Dashboard](assets/proposal.png)
 ![Project Dashboard](assets/procurement.png)
 
 
@@ -47,6 +51,11 @@ Assign and track tasks to ensure all construction activities are on schedule.
 
 ### 📑 Client Requirement Management
 Efficiently handle client requirements with structured forms and feedback tracking.
+![CRM Dashboard](assets/req.png)
+
+### 📁 Permit Management
+Manage permits efficiently with tools to create, track, and update permit details.
+![CRM Dashboard](assets/permit.png)
 
 ## 🛠️ Tech Stack
 
