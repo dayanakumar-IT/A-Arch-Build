@@ -6,7 +6,7 @@ A-Arch Build is a comprehensive web application built using the MERN stack by a 
 
 ### 📁 Project Management
 Manage projects efficiently with tools to create, track, and update project details.
-(assets/images/project.png)
+![Project Dashboard](assets/images/project.png)
 
 ### 👤 Client Management
 Easily manage client information, including profiles, project assignments, and communications.
